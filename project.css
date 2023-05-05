@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@100;200;300;400;500;600;700&display=swap');
+:root
+{
+    --acc-color:rgba(96, 12, 175, 0.786);
+}
+body{
+    font-family: 'Comme', sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: rgb(222, 203, 203);
+    justify-content: center;
+}
+*
+{
+    /* outline: 1px solid red; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.maindiv > div
+{
+    display: flex;
+    flex-direction: column;
+    /* width: 40%; */
+    padding: 1rem;
+    align-items: center;
+
+
+}
+button
+{ 
+    /* display: flex;
+    align-items: center; */
+    padding: .7rem 2rem;
+    /* margin: 1rem; */
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid gray;
+    background-color: #CbC3E3;
+    font-weight: 900;
+    color: rgb(71, 70, 68);
+   
+}
+button:hover
+{       
+    cursor: pointer;
+    flex-grow: 1;
+    width: 70%;
+    outline: 1.1px solid rgb(252, 196, 196);
+    transform: scale(1.1);
+    transition: all 100ms ease-in-out;
+}
+
+input
+{
+    background-color: rgba(128, 128, 128, 0.46);
+    margin:.7rem;
+    padding: .4rem;
+    outline: none;
+    border: 1px solid rgba(220, 218, 218, 0.534);
+    border-radius: 9px;
+    color: rgb(255, 255, 255);
+}
+input:hover
+{
+    cursor: pointer;
+    outline: 2px solid white;
+}
+.maindiv
+{   margin: 5rem;
+    padding: 2rem;
+    background-color: var(--acc-color);
+    border-radius: 9px;
+    height: 100;
+}
+fieldset
+{
+    width: 15rem;
+    border: 2px solid rgb(3, 3, 3);
+    border-radius: 7px;
+}
+.solution
+{
+ /* display: flex; */
+ /* justify-content:; */
+ padding: .8rem;
+}
+h4
+{
+    text-transform: uppercase;
+    padding: .1rem;
+}
