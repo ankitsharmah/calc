@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comme:wght@100;200;300;400;500;600;700&display=swap');
 :root
 {
-    --acc-color:rgba(96, 12, 175, 0.786);
+    --acc-color:rgba(34, 32, 46, 0.786);
 }
 body{
     font-family: 'Comme', sans-serif;
@@ -37,48 +37,62 @@ button
     border-radius: 6px;
     outline: none;
     border: 1px solid gray;
-    background-color: #CbC3E3;
+    background-color: #e3fcea  ;
     font-weight: 900;
     color: rgb(71, 70, 68);
-   
+    transition: all 250ms ease-in-out;
 }
-button:hover
+button:hover:not(:disabled)
 {       
     cursor: pointer;
     flex-grow: 1;
-    width: 70%;
-    outline: 1.1px solid rgb(252, 196, 196);
+
+    outline: 1.1px solid rgb(222, 235, 220);
     transform: scale(1.1);
-    transition: all 100ms ease-in-out;
 }
+button:disabled
+{
+    background-color: red;
+}  
 
 input
 {
-    background-color: rgba(128, 128, 128, 0.46);
+    background-color: rgba(24, 23, 32, 0.786);
     margin:.7rem;
+    color: white;
     padding: .4rem;
     outline: none;
-    border: 1px solid rgba(220, 218, 218, 0.534);
+    border: 1px solid rgba(88, 178, 214, 0.534);
     border-radius: 9px;
-    color: rgb(255, 255, 255);
+transition: all 320ms ease-in-out;
 }
 input:hover
 {
+
+    -webkit-box-shadow: 0px 0px 48px 4px rgba(112,63,227,0.47);
+-moz-box-shadow: 0px 0px 48px 4px rgba(255, 255, 255, 0.47);
+box-shadow: 0px 0px 100px 5px rgba(93, 33, 232, 0.7);
     cursor: pointer;
-    outline: 2px solid white;
+    /* outline: 3px solid rgb(76, 90, 245); */
 }
 .maindiv
 {   margin: 5rem;
     padding: 2rem;
     background-color: var(--acc-color);
     border-radius: 9px;
-    height: 100;
+    height: 100%;
+    -webkit-box-shadow: 10px 10px 22px 22px rgba(0,0,0,0.33);
+    -moz-box-shadow: 10px 10px 22px 22px rgba(0,0,0,0.33);
+    box-shadow: 10px 10px 22px 22px rgba(0,0,0,0.33);
+    color: white;
+
 }
 fieldset
 {
     width: 15rem;
-    border: 2px solid rgb(3, 3, 3);
+    border: 2px solid rgb(251, 246, 246);
     border-radius: 7px;
+    color: whitesmoke;
 }
 .solution
 {
@@ -90,4 +104,15 @@ h4
 {
     text-transform: uppercase;
     padding: .1rem;
+}
+input:focus:invalid{
+    outline: 1px solid rgba(219, 42, 42, 0.73);
+    box-shadow: 0px 0px 48px 4px rgb(255, 0, 0);
+
+    }
+
+.h1
+{
+    text-transform: uppercase;
+    color: rgb(241, 237, 237);
 }
